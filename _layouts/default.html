@@ -114,16 +114,40 @@
             background-color: #f6f8fa;
         }
 
+        h1 + table {
+            border: none;
+            margin-top: 2rem;
+        }
+
+        h1 + table td {
+            border: none;
+            padding: 0 1.5rem 0 0;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        h1 + table tr:hover {
+            background-color: transparent;
+        }
+
+        h1 + table td:first-child {
+            width: 33%;
+            padding-right: 2rem;
+        }
+
+        h1 + table td:first-child img {
+            width: 100%;
+            margin: 0;
+        }
+
+        h1 + table td:last-child {
+            width: 67%;
+            padding-left: 0;
+        }
+
         img {
             max-width: 100%;
             height: auto;
-            margin: 1rem 0;
-        }
-
-        h1 + img {
-            width: 25%;
-            height: auto;
-            display: block;
             margin: 1rem 0;
         }
 
