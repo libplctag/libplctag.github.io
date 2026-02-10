@@ -11,6 +11,7 @@ libplctag is an open-source C library for reading and writing tags in PLCs using
 ![Latest Release](https://img.shields.io/github/v/release/libplctag/libplctag)
 
 Quick Links:
+- [Sponsor us on GitHub!](https://github.com/sponsors/libplctag)
 - [Download Latest Release](https://github.com/libplctag/libplctag/releases)
 - [Documentation & Wiki](https://github.com/libplctag/libplctag/wiki)
 - [Source Code](https://github.com/libplctag/libplctag)
