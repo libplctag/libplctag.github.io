@@ -1,95 +1,75 @@
-# libplctag
+# libplctag - PLC Communication Library
 
-- [libplctag](#libplctag)
-  - [PLC Communications](#plc-communications)
-  - [WARNING - DISCLAIMER](#warning---disclaimer)
-  - [Features](#features)
-    - [High Level Features](#high-level-features)
-    - [Detailed Features](#detailed-features)
-      - [PLC Support](#plc-support)
-  - [Components](#components)
-  - [Contact and Support](#contact-and-support)
-    - [libplctag Forum](#libplctag-forum)
-    - [GitHub](#github)
+libplctag is an open-source C library for reading and writing tags in PLCs using EtherNet/IP and Modbus TCP. Available for Linux, Windows, and macOS, it's been in production use since 2012 across industries including manufacturing, radio astronomy, fitness equipment, and food handling.
 
-## PLC Communications
+![Latest Release](https://img.shields.io/github/v/release/libplctag/libplctag)
 
-This set of open source C library for Linux, Android, Windows and macOS uses **EtherNet/IP** or **Modbus TCP** to read and write tags in PLCs.  The library has been in production since early 2012 and is used by multiple organizations for many tasks including controlling radio telescopes, large and precision manufacturing, controlling fitness equipment, food handling and many, many more.
+Quick Links:
+- [Download Latest Release](https://github.com/libplctag/libplctag/releases)
+- [Documentation & Wiki](https://github.com/libplctag/libplctag/wiki)
+- [Source Code](https://github.com/libplctag/libplctag)
+- [Language Wrappers](#wrappers)
 
 ## WARNING - DISCLAIMER
 
-Note: **PLCs control many kinds of equipment and loss of property, production or even life can happen if mistakes in programming or access are made.  Always use caution when accessing or programming PLCs!**
+PLCs control equipment where loss of property, production, or life can occur from programming mistakes. Always exercise caution when accessing or programming PLCs!
 
-We make no claims or warrants about the suitability of this code for
-any purpose.
+We make no claims or warranties about the suitability of this code for any purpose.
 
-Be careful!
+## Key Features
 
-## Features
+- EtherNet/IP and Modbus TCP support
+- Multi-platform: Linux, Windows, macOS (x86, x86-64, ARM, MIPS)
+- Multi-language: C core with wrappers for C#/.Net, Java, Julia, Go, Python, and more
+- Stable API with minimal breaking changes since 2012
+- High performance with low memory footprint
+- Free and open source (dual licensed: MPL 2.0 or LGPL 2+)
 
-### High Level Features
+## PLC Support
 
-- EtherNet/IP and Modbus TCP support.
-- Open source licensing.
-- Cross platform support.
-- Very stable API with almost no changes other than feature additions since 2012.
-- Low memory use and very high performance and capacity.  Uses protocol-specific features to increase performance.
-- Wrappers for higher level languages like C#/.Net, Julia etc.
-- Free!
+- Rockwell/Allen-Bradley: ControlLogix, CompactLogix, Micro 800/850, MicroLogix, SLC 500, PLC-5
+- Omron: NX/NJ series PLCs
+- Modbus TCP devices
 
-### Detailed Features
+For detailed feature lists, see the [full README](https://github.com/libplctag/libplctag#features).
 
-#### PLC Support
+## Getting Started
 
-- support for Rockwell/Allen-Bradley ControlLogix(tm) PLCs via CIP-EtherNet/IP (CIP/EIP or EIP).
-  - read/write 8, 16, 32, and 64-bit signed and unsigned integers.
-  - read/write single bits/booleans.
-  - read/write 32-bit and 64-bit IEEE format (little endian) floating point.
-  - raw support for user-defined structures (you need to pull out the data piece by piece)
-  - read/write arrays of the above.
-  - multiple-request support per packet.
-  - packet size negotiation with newer firmware (version 20+) and hardware.
-  - tag listing, both controller and program tags.
-- support for Rockwell/Allen-Bradley MicroLogix 8x0 PLCs.
-  - Support as for ControlLogix where possible.
-- support for older Rockwell/Allen-Bradley such as PLC5 PLCs (E-series with Ethernet), SLC 500 and MicroLogix with Ethernet via CIP.
-  - read/write of 16-bit INT.
-  - read/write of 32-bit floating point.
-  - read/write of arrays of the above (arrays not tested on SLC 500).
-- support for older Rockwell/Allen-Bradley PLCs accessed over a DH+ bridge (i.e. a LGX chassis with a DHRIO module) such as PLC/5, SLC 500 and MicroLogix.
-  - read/write of 16-bit INT.
-  - read/write of 32-bit floating point.
-  - read/write of arrays of the above.
-- Support for Omron NX/NJ series PLCs as for Allen-Bradley Micro8x0.
-- Support for Modbus TCP.
+1. [Download pre-built binaries](https://github.com/libplctag/libplctag/releases) for your platform
+2. Explore [example code](https://github.com/libplctag/libplctag/tree/release/src/examples), starting with [simple.c](https://github.com/libplctag/libplctag/blob/release/src/examples/simple.c)
+3. Read the [API documentation](https://github.com/libplctag/libplctag/wiki/API) on the wiki
+4. [Build from source](https://github.com/libplctag/libplctag) for your specific needs
 
-## Components
+## Language Wrappers {#wrappers}
 
-The following components are part of the libplctag organization.  The core  C library provides low level access to PLCs and performs all networking and PLC-specific protocol handling.  Alternate wrappers in other languages provide higher-level APIs and more convenient programming.
+The C core library is designed for easy wrapping in other languages:
 
-Go to the specific project below for language/project-specific information.
+Official projects in the libplctag organization:
+- [libplctag.NET](https://github.com/libplctag/libplctag.NET) - C#/.Net (very popular!)
+- [libplctag4j](https://github.com/libplctag/libplctag4j) - Java and Android
+- [PLCTag.jl](https://github.com/libplctag/PLCTag.jl) - Julia
+- [goplctag](https://github.com/libplctag/goplctag) - Go
 
-1. [libplctag](https://github.com/libplctag/libplctag) - This is the core C library.   It can be used directly in C or C++ or wrapped in other languages with some sort of FFI system.  The API provided by this library is low level.
-2. [libplctag.NET](https://github.com/libplctag/libplctag.NET) - This library wraps the C core library for C# and VB.  It can also be used from Nuget.  It includes the native C DLLs for multiple platforms.
-3. [PLCTag.jl](https://github.com/libplctag/PLCTag.jl) - A Julia language wrapper for the core C library.  It is available in the Julia package manager.
-4. [libplctag4j](https://github.com/libplctag/libplctag4j) - A Java language wrapper for the core C library.  It includes native DLLs for multiple platforms as well.   Also available for Android as an AAR.  Soon to be available from JCenter.
-5. [libplctag4android](http://github.com/libplctag/libplctag4android) - A minimal example application demonstrating use of libplctag and libplctag4j from Android.
+Included with the C library:
+- C++, Python, Pascal
 
-## Contact and Support
+Community wrappers:
+- Additional C# implementations and LabVIEW support available on GitHub
 
-There are two ways to ask for help or contact us.
+## Contributing
 
-### libplctag Forum
+We welcome contributions including bug reports, fixes, new protocols, platforms, language wrappers, and testing. See [how to contribute](https://github.com/libplctag/libplctag#how-to-contribute) in the main repository.
 
-If you have general questions or comments about the
-library, its use, or about one of the wrapper libraries, please join the Google group
-[libplctag](https://groups.google.com/forum/#!forum/libplctag)!
+## Support & Community
 
-The forum is open to all, but is by request only to keep the spammers down.  The traffic is fairly
-light with usually a small number of emails per month.  It is our primary means for users to
-ask questions and for discussions to happen.   Announcements about released happen on the forum.
+- [libplctag Forum](https://groups.google.com/forum/#!forum/libplctag) - General questions and discussions
+- [GitHub Issues](https://github.com/libplctag/libplctag/issues) - Bug reports and feature requests
+- [Wiki History Page](https://github.com/libplctag/libplctag/wiki/History) - Learn how libplctag was created
 
-### GitHub
+## License
 
-If you find bugs or need specific features, please file them on GitHub's issue tracker for
-the specific project.
+Dual licensed under Mozilla Public License 2.0 (MPL 2.0) or GNU Lesser General Public License 2+ (LGPL 2+). See the main repository for license details.
+
+---
+
+For complete documentation, visit the [libplctag wiki](https://github.com/libplctag/libplctag/wiki) and [main repository](https://github.com/libplctag/libplctag).
