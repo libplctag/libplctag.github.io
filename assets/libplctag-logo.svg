@@ -1,0 +1,24 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#D9DBDD" />
+  
+  <path d="M110,50 Q70,50 70,100 L70,210 Q70,250 30,250 Q70,250 70,290 L70,400 Q70,450 110,450" 
+        fill="none" stroke="black" stroke-width="22" stroke-linecap="square"/>
+
+  <path d="M685,50 Q725,50 725,100 L725,210 Q725,250 765,250 Q725,250 725,290 L725,400 Q725,450 685,450" 
+        fill="none" stroke="black" stroke-width="22" stroke-linecap="square"/>
+
+  <g transform="translate(145, 65)">
+    <rect x="0" y="0" width="100" height="100" fill="#1CA9E1" />
+    <rect x="135" y="0" width="100" height="100" fill="#1CA9E1" />
+    <rect x="270" y="0" width="100" height="100" fill="#1CA9E1" />
+    <rect x="405" y="0" width="100" height="100" fill="#1CA9E1" />
+
+    <text x="252" y="215" font-family="Verdana, Geneva, sans-serif" font-size="105" font-weight="bold" fill="black" text-anchor="middle" letter-spacing="-2">libplctag</text>
+
+    <rect x="0" y="270" width="100" height="100" fill="#1CA9E1" />
+    <rect x="135" y="270" width="100" height="100" fill="#1CA9E1" />
+    <rect x="270" y="270" width="100" height="100" fill="#1CA9E1" />
+    <rect x="405" y="270" width="100" height="100" fill="#1CA9E1" />
+  </g>
+</svg>
+
