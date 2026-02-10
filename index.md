@@ -33,6 +33,25 @@ We make no claims or warranties about the suitability of this code for any purpo
 
 For detailed feature lists, see the [full README](https://github.com/libplctag/libplctag#features).
 
+## Tier One Platforms
+
+These are OS/compiler combinations that are fully tested with each release:
+
+| **OS**       | **OS Version** | **Compiler**    | **Compiler Version** | **Architecture** | **Status** |
+|    :-:       |    :-:         |    :-:          |    :-:               |        :-:       | :-         |
+| Alpine Linux | v3.23.0-62     | GCC             | 15.2.0               | x86-64           | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| Alpine Linux | v3.23.0-62     | GCC             | 15.2.0               | Aarch64          | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| macOS        | 14             | Apple-Clang     | 17.0.0               | x86-64           | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| macOS        | 15             | Apple-Clang     | 17.0.0               | Aarch64          | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| Ubuntu Linux | 24.04          | GCC             | 13.3.0               | x86-64           | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| Ubuntu Linux | 24.04          | GCC-musl        | 13.3.0               | x86-64           | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| Ubuntu Linux | 24.04          | GCC             | 13.3.0               | Aarch64          | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| Ubuntu Linux | 24.04          | GCC             | 13.3.0               | x86              | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| Windows      | 11 (Server 22) | MSVC            | 19.44.35221.0        | x86-64           | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| Windows      | 11 (Server 22) | MSVC            | 19.44.35221.0        | x86              | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| Windows      | 11 (Server 22) | MSVC            | 19.44.35221.0        | Aarch64          | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+| Windows      | 11 (Server 22) | MinGW-GCC.      | 14.2.0               | x86-64           | ![Release branch CI status](https://github.com/libplctag/libplctag/actions/workflows/ci.yml/badge.svg?branch=release) |
+
 ## Getting Started
 
 1. [Download pre-built binaries](https://github.com/libplctag/libplctag/releases) for your platform
