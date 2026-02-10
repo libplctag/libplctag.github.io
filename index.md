@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # libplctag - PLC Communication Library
 
 libplctag is an open-source C library for reading and writing tags in PLCs using EtherNet/IP and Modbus TCP. Available for Linux, Windows, and macOS, it's been in production use since 2012 across industries including manufacturing, radio astronomy, fitness equipment, and food handling.
@@ -8,6 +12,7 @@ Quick Links:
 - [Download Latest Release](https://github.com/libplctag/libplctag/releases)
 - [Documentation & Wiki](https://github.com/libplctag/libplctag/wiki)
 - [Source Code](https://github.com/libplctag/libplctag)
+- [Forum](https://groups.google.com/forum/#!forum/libplctag)
 - [Language Wrappers](#wrappers)
 
 ## WARNING - DISCLAIMER
@@ -84,6 +89,7 @@ We welcome contributions including bug reports, fixes, new protocols, platforms,
 - [libplctag Forum](https://groups.google.com/forum/#!forum/libplctag) - General questions and discussions
 - [GitHub Issues](https://github.com/libplctag/libplctag/issues) - Bug reports and feature requests
 - [Wiki History Page](https://github.com/libplctag/libplctag/wiki/History) - Learn how libplctag was created
+- [Sponsor on GitHub](https://github.com/sponsors/libplctag) - Support the project
 
 ## License
 
